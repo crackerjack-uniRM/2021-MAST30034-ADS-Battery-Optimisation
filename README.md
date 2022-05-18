@@ -241,10 +241,13 @@ Training, Cross-Validation and Testing.
             |---- deliverable 2 
             |---- deliverable 3 
             |---- deliverable 4 
+            |---- utils # utility functions
+            |---- log # store function execution logs
     |---- env # python environment configuration Files
             |---- conda
             |---- venv
     |---- images # store README images
+    |---- package # store final project
 ``` 
 
 ## Dependencies
