@@ -10,14 +10,18 @@ by comparing other group's work.
 
 - [Project Specs](#project-specs)
     - [Problem Overview](#problem-overview)
-        - [Objective: Mandatory task](#objective-mandatory-task)
-        - [Objective: Bonus task](#objective-bonus-task)
-        - [Industry purpose: Revenue maximisation](#industry-purpose-revenue-maximisation-for)
+        - [Without battery](#without-battery)
+        - [WIth battery](#with-battery)
+        - [Objective]()
+            - [Objective: Mandatory task](#objective-mandatory-task)
+            - [Objective: Bonus task](#objective-bonus-task)
+            - [Industry purpose: Revenue maximisation](#industry-purpose-revenue-maximisation-for)
     - [Energy context](#energy-context)
         - [Overview of Nation Electricity Market (NEM)](#overview-of-nation-electricity-market-nem)
         - [Price setting](#price-setting)
         - [Generation](#generation)
         - [Price setting in the NEM: 30-minute spot price](#price-setting-in-the-nem-30-minute-spot-price)
+        - [Electricity price trends: Victorian spot price (2020)](#electricity-price-trends-victorian-spot-price-2020) 
         - [How batteries function](#how-batteries-function)
     - [Problem description](#problem-description)
         - [Problem Objective](#problem-objective)
@@ -34,8 +38,8 @@ by comparing other group's work.
         - [Data sources for problem (all sourced from AEMO)](#data-sources-for-problem-all-sourced-from-aemo)
             - [Mandatory task](#mandatory-task)
             - [Bonus task](#bonus-task)
-    - [Evaluation process](#evaluation-process)
 - [Directories](#directories)
+- [Summarised Information](#summarised-information)
 - [Dependencies](#dependencies) 
 - [Others](#others)
 - [License](#license)
@@ -44,17 +48,16 @@ by comparing other group's work.
 
 ### Problem overview
 
+#### Without battery
 - In Australia, grid electricity demand has a bath-tub shape (called the duck-curve) due to rooftop
 solar on homes and commercial properties reducing the amount of electricity needed during the middle of the day.
-
 - Additional solar generation is therefore limited in its ability to meet demand, despite having low 
 capital costs and no short-run marginal cost (no fuel) - it is free to operate.
 
+#### With battery
 - Batteries add energy demand when they charge, and then add to energy supply when they discharge.
-
 - Energy storage technologies, such as batteries, are critical for the renewable energy transition due 
 to their ability to shift energy to low sunlight/wind periods.
-
 - Note the large solar capacity (compared to without battery) due to the battery "unlocking more generation".
 This displaces more expensive and high-emitting generation.
 
@@ -113,9 +116,23 @@ and so this price ensures it switches on when profitable. Unlike coal, some gas 
 **The gas generator bids its remaining 5MW at $15,000**: When demand reaches extreme levels, there is no
 competition and so generators can bid at the market-cap.
 
--- TODO add sample imgs.
+![Settlement interval (5-minute period)](./images/price_setting_in_the_nem.png)
+
+In this simplified example, the following settlements occur:
+- In the 5-minute and 10-minute periods, demand is low and is serviced by the lowest cost generation. 
+The price is $1 in both periods and this is received by both solar and coal for their respective columnes dispatched.
+- In the 15-minute period, demand rises and coal ramps up to meet this. The price is set at $60 which is received by 
+both coal and solar for theri respective volumes dispatched.
+- In the 20-minute and 30-minute periods, demand is near its peak and gas switches on to ensure adequate supply. 
+The price is set at $120 and this is received by all generators for the respective volumnes dispatched.
+- In the 25-minute period, demand momentarily reaches its peak. The price is set at $15,000 and all generators receive this price for their respective generation.
+
+**The price for the 30-minute period is set at the average of the 6 periods = ~$2,550/MWh. All generators receive this price for their generation output during the 30-minute period.**
 
 > Generation/consumption in Megawatt-hours (MWh) = Power in Megawatts (MV) * Time in hours (h)
+
+#### Electricity price trends: Victorian spot price (2020)
+![Victorian spot price 2020](./images/victorian_spot_price_2020.png)
 
 #### How batteries function
 
@@ -161,7 +178,7 @@ forecast these.
 To ensure comparable outcomes across the groups, identical time periods should be userd for 
 Training, Cross-Validation and Testing.
 
--- TODO: input timeline graph
+![Date timeline for battery calibration](./images/data_timeline_for_battery_optimisation.png)
 
 #### Deliverables
 
@@ -206,7 +223,7 @@ Training, Cross-Validation and Testing.
 ##### Mandatory task
 
 - [ ] Spot price data for Victoria, training and cross-validation period (01/01/2018-30/06/2021).
-- [ ] Spot price data for Victoria, test period (01/07/2021-11/08/2021) - More data privided for t+n functions [here](https://aemo.com.au/energy-systems/electricity/national-electricity-market- nem/data-nem/aggregated-data).
+- [ ] Spot price data for Victoria, test period (01/07/2021-11/08/2021) - More data privided for t+n functions [here](https://aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/aggregated-data).
 
 ##### Bonus task
 
@@ -215,15 +232,30 @@ Training, Cross-Validation and Testing.
 - [ ] Available intermittent (renewable) generation for all 5 states.
 - [ ] Interconnector limits between 5 states.
 
-### Evaluation process
-
--- TODO: add grade sheet
-
 ## Directories
-
+```plaintext
+| root
+    |---- data # store data download scripts
+    |---- deliverable # store deliverable Content
+    |---- env # python environment configuration files
+    |---- images # store README images
+``` 
 
 ## Dependencies
+For dependency requirements please check `./env/requirements.txt`.
+
+The team encourage that user build a virtual environment use venv or conda to ensure tools' version consistence. 
+
+## Summarised Information
+Deliverable summarisation content will be here...
 
 ## Others
+- For progress tracking, please check [notion]().
+- For project report, please check [overleaf]().
+- For project presentation, please check [google slide]().
 
 ## License
+This battery-optimisation originally from MAST30034 Applied Data Science 2021 course offered by the University of Melbourne. 
+
+This is an open project with MIT that everyone have rights to change or modify the project content.
+
