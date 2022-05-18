@@ -259,9 +259,9 @@ The team encourage that user build a virtual environment use venv or conda to en
 Deliverable summarisation content will be here...
 
 ## Others
-- For progress tracking, please check [notion]().
-- For project report, please check [overleaf]().
-- For project presentation, please check [google slide]().
+- For progress tracking, please check [notion](https://huangsunchuangyu.notion.site/2021-MAST30034-Australian-National-Electricity-Market-Battery-Optimisation-Project-97a2a79d16834aa1af4633c19d7b1799).
+- For project report, please check [overleaf](https://www.overleaf.com/read/nmzfyjgwwkvx).
+- For project presentation, please check [google slide](https://docs.google.com/presentation/d/1BKgjFc6Ww9u5URi9O0mThHlEpxLBmQ2LLDVyMuoO104/edit?usp=sharing).
 
 ## License
 This battery-optimisation originally from MAST30034 Applied Data Science 2021 course offered by the University of Melbourne. 
