@@ -4,6 +4,10 @@ To run the project without any unexpected error, please use the following comman
 
 After install a virtual environment, please install dependencies using requirements.txt.
 
+**For MacOS/Linux User**: choose either methods
+
+**For Windows User**: prefer choose anaconda/miniconda
+
 ## Anaconda / Miniconda
 
 **Auto Environment Setup**
@@ -29,3 +33,12 @@ To activate the conda envrionment, run `conda activate bop`.
 Please make sure that there is no duplicated environment name.
 
 ## Virtual Envrionment
+
+To run the virutal envrionment setup script, please run `install.py`. 
+
+To activate the virtual environment, please run `source /venv-bop/bin/activate`
+
+NOTE: a shell may block this command, for example, fish shell will require user add this virtual env to config.fish. 
+
+And this virtual env setup is highly depends on the current python version that you have. Therefore, the team strongly 
+recommand using anaconda / miniconda instead.
