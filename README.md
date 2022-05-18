@@ -1,6 +1,6 @@
 # 2021 Semester 2 Applied Data Science - Battery Optimisation Project
 
-This battery optimisation project is a practical project for Rin (Sunchuangyu Huang) and Martin (Quizihan wu). 
+This battery optimisation project is a practical project for Rin (Sunchuangyu Huang) and Martin (Quizihan Wu). 
 Why practical project? cause the team was doing the CSL industry project instead. 
 
 For now on, we try to accomplish this project within couple weeks (expect in 3 weeks), see where we can go 
