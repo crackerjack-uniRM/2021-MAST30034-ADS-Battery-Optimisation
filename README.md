@@ -266,5 +266,5 @@ Deliverable summarisation content will be here...
 ## License
 This battery-optimisation originally from MAST30034 Applied Data Science 2021 course offered by the University of Melbourne. 
 
-This is an open project with MIT that everyone have rights to change or modify the project content. For more information, please see [license]().
+This is an open project with MIT that everyone have rights to change or modify the project content. For more information, please see [license](https://github.com/crackerjack-uniRM/2021-MAST30034-ADS-Battery-Optimisation/blob/main/LICENSE).
 
