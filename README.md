@@ -235,19 +235,39 @@ Training, Cross-Validation and Testing.
 ## Directories
 ```plaintext
   root
-    |---- data # store data download scripts
-    |---- deliverable # store deliverable Content
-            |---- deliverable 1
-            |---- deliverable 2 
-            |---- deliverable 3 
-            |---- deliverable 4 
-            |---- utils # utility functions
-            |---- log # store function execution logs
-    |---- env # python environment configuration Files
+    |---- data                                   # store data download scripts
+            |---- external                       # thrid party data
+            |---- interim                        # intermediate data
+            |---- processed                      # canonical data
+            |---- raw                            # immutable, original data dump
+    |---- docs                                   # project documentations
+    |---- env                                    # python environment configuration Files
             |---- conda
             |---- venv
-    |---- images # store README images
-    |---- package # store final project
+    |---- images                                 # store README images
+    |---- package                                # store final project
+    |---- notebooks                              # jupyter notebooks
+    |---- reference                              # data dictionary, manuals, and all other explanatory materials
+    |---- reports                                # generated analysis Files
+            |---- figures                        # rerport figures
+    |---- requirements.txt
+    |---- src                                    # project source code 
+        |---- __init__.py
+        |---- data                               # data download scripts
+                |---- deliverable                # store deliverable Content
+                        |---- deliverable 1
+                        |---- deliverable 2 
+                        |---- deliverable 3 
+                        |---- deliverable 4 
+                        |---- utils               # utility functions
+                        |---- log                 # store function execution logs
+        |---- features                            # scripts for feature engineering
+        |---- models                              # scripts for training models
+                |---- predict_model.py            
+                |---- train_model.py
+        |---- predictions                         # 
+        |---- visualisations                      # scripts to generate plots
+                |---- visualise.py
 ``` 
 
 ## Dependencies
