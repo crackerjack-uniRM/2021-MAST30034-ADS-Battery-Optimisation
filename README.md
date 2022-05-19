@@ -245,6 +245,8 @@ Training, Cross-Validation and Testing.
             |---- conda
             |---- venv
     |---- images                                 # store README images
+    |---- LICENSE 
+    |---- Makefile
     |---- package                                # store final project
     |---- notebooks                              # jupyter notebooks
     |---- reference                              # data dictionary, manuals, and all other explanatory materials
