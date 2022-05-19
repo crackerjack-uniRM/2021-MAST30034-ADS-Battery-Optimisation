@@ -1,4 +1,4 @@
-# 2021 Semester 2 Applied Data Science - Battery Optimisation Project
+<h1 align='center'>🔋 2021 MAST30034 Applied Data Science<br>Battery Optimisation Project</h1>
 
 This battery optimisation project is a practical project for Rin (Sunchuangyu Huang) and Martin (Quizihan Wu). 
 Why practical project? cause the team was doing the CSL industry project instead. 
