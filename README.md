@@ -1,4 +1,4 @@
-<h1 align='center'>🔋 Battery Optimisation Project</h1>
+<h1 align='center'><img src="https://c.tenor.com/r9ufRvOsnNQAAAAC/charging-battery-percentage.gif" height=25 alt='battery'> Battery Optimisation Project</h1>
 
 This battery optimisation project is a practical project for Rin (Sunchuangyu Huang) and Martin (Quizihan Wu). 
 Why practical project? cause the team was doing the CSL industry project instead. 
